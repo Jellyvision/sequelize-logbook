@@ -1,0 +1,42 @@
+{
+  "name": "sequelize-logbook",
+  "version": "0.0.1",
+  "description": "A plugin for adding a log book / revision history / audit / paper trail to a sequelize model.",
+  "main": "index.js",
+  "scripts": {
+    "test": "istanbul cover _mocha -x \"./test/**\" -- -t 10000 \"./test/**/*.js\" --recursive --require ./test/mocha.opts.js",
+    "prettier": "find ./ -name '*.js' -not -path './node_modules/*' | xargs ./node_modules/.bin/prettier --write --single-quote --trailing-comma es5",
+    "coverage": "npm run test && open ./coverage/lcov-report/sequelize-logbook/index.html"
+  },
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "chai-as-promised": "^6.0.0",
+    "istanbul": "^0.4.5",
+    "mocha": "^3.5.3",
+    "prettier": "^1.7.2",
+    "proxyquire": "^1.8.0",
+    "sqlite3": "^3.1.12"
+  },
+  "dependencies": {
+    "lodash": "^4.17.4",
+    "sequelize": "^3.25.0"
+  },
+  "keywords": [
+    "sequelize",
+    "sequelizejs",
+    "sequelize-plugin",
+    "revision",
+    "revisions",
+    "versions",
+    "versioning",
+    "history",
+    "audit",
+    "audit trail",
+    "trail",
+    "paper trail",
+    "papertrail",
+    "revision"
+  ],
+  "author": "",
+  "license": "MIT"
+}
